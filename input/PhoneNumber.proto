@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.example.tutorial";
+option java_outer_classname = "PBPhoneNumber";
+
+message PhoneNumber {
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+  string number = 1;
+  PhoneType type = 2;
+}

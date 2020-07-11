@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "PhoneNumber.proto";
+
+option java_package = "com.example.tutorial";
+option java_outer_classname = "PBPerson";
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+  repeated PhoneNumber phones = 4;
+}
